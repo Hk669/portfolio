@@ -39,7 +39,7 @@ body {
     color: #fff; 
     text-align: center;
     padding: 350px; 
-    min-height: 300px;
+    min-height: 100px;
     
 }
 
@@ -47,6 +47,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 100px;
+    text-decoration: none;
 }
 
 .about {
@@ -56,4 +57,19 @@ body {
 
 .links {
     flex:0 0 calc(40% - 10px);
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width:30px;
+    height: 100px;
+    text-decoration: none;
+    margin-right: 12px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.links h2 {
+    
 }
