@@ -1,0 +1,59 @@
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size:14px;
+    line-height:1.78;
+    color:#000;
+    background-color:#fafaf9a2;
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.navbar ul {
+    display: inline-flex;
+    justify-content: right;
+    list-style: none;
+    
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 20px;
+    height:40px;
+}   
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.hero-section {
+    background-image: url('img/home.jpg'); 
+    background-size:100%; 
+    background-position: center; 
+    color: #fff; 
+    text-align: center;
+    padding: 350px; 
+    min-height: 300px;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+.about {
+    flex:1 0 calc(60% - 15px);
+    margin-right: 10px;
+}
+
+.links {
+    flex:0 0 calc(40% - 10px);
+}
