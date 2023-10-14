@@ -57,19 +57,31 @@ body {
 
 .links {
     flex:0 0 calc(40% - 10px);
-    display: flex;
-    align-items: center;
+    display: block;
+    text-align: center;
 }
 
 .icon {
     width:30px;
-    height: 100px;
+    height: 30px;
     text-decoration: none;
-    margin-right: 12px;
+    margin-right: 10px;
     padding: 10px;
     display: inline-block;
+    vertical-align: middle;
+
 }
 
 .links h2 {
-    
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.links a {
+    text-decoration: none !important;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 15px;
 }
