@@ -149,7 +149,7 @@ footer {
     height: 300px;
     margin-left: 50px;
     margin-right: 50px;
-    padding-left: 80px;
+    padding-left: 50px;
     
 }
 
@@ -160,8 +160,10 @@ footer {
 }
 
 .project h2 {
-    text-align:left;
-    margin-left: 180px;
+    display: flex;
+    align-items:start;
+    margin-left: 120px;
+    margin-top: 20px;
 }
 
 .projects h1 {
@@ -226,7 +228,132 @@ input[type="submit"]:hover {
     background-color: #46453f;
 }
 
+body textarea {
+    width: 520px;
+    height: 100px;
+    border: 1px solid #d6cfcf;
+    border-radius: 8px;
+}
+
 .contact h2 {
     margin: 90px;
     text-align: center;
+}
+
+.opensource h1 {
+    margin-left: 100px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.os-details {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    margin-left:50px;
+}
+
+.os-content {
+    margin-left:50px;
+    text-align: left;
+}
+
+.os-details img {
+    width: 450px;
+    height: 200px;
+}
+
+.os-project {
+    flex-basis: calc(33.33% - 20px); 
+    text-align: center;
+    margin-bottom: 40px;
+    border: 1px solid rgba(184, 177, 177, 0.566);
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 10px #56555498;
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.os-project h2 {
+    display: flex;
+    align-items: start;
+    margin-left: 120px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.os-content span {
+    font-weight: bold;
+}
+
+.os-project a {
+    text-decoration: none;
+    color: #131211;
+}
+
+.os-project a:hover {
+    color: rgb(160, 160, 144);
+    transition: color 0.2s;
+}
+
+.os-project:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px rgb(160, 160, 144);
+}
+
+.project img {
+    width: 400px;
+    height: 200px;
+    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.terms {
+    text-align: start;
+    display: flex;
+    margin-left: 100px;
+    font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+    .project, .os-project {
+        flex-basis: calc(50% - 20px); /* Two columns on smaller screens */
+    }
+
+    .projects h1, .opensource h1, .terms {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar .hamburger {
+        display: block; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar.active ul {
+        display: block; 
+    }
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
 }

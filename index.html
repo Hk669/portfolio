@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hrushikesh</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/hk.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
@@ -25,6 +26,11 @@
                 <ul>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </nav>
         <div class="hero-section">
@@ -78,6 +84,13 @@
         };
         var typed = new Typed("#typed-text", options);
       </script>
+      <script>
+        // Toggle the active class to show/hide the navigation links
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        });
+        </script>
 </body>
 <footer>
     <p>&copy; Hrushikesh Dokala 2023</p>
