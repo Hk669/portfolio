@@ -1,5 +1,6 @@
 
 body {
+    font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
     font-size:14px;
     line-height:1.78;
@@ -8,9 +9,13 @@ body {
 }
 
 .navbar {
-    display:flex;
-    justify-content: space-around;
-    align-items:center;
+    background-color:#fafaf92d;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
 }
 
 .navbar ul {
@@ -30,6 +35,13 @@ body {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    margin: 0 20px;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: burlywood;
+    transition: color 0.3s;
 }
 
 .hero-section {
@@ -37,10 +49,14 @@ body {
     background-size:100%; 
     background-position: center; 
     color: #fff; 
-    text-align: center;
+    text-align: left;
     padding: 350px; 
     min-height: 100px;
-    
+    font-size: 60px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(8, 8, 8, 0.566);
+    overflow: hidden;
+    height: 200px;
 }
 
 .container {
@@ -48,6 +64,7 @@ body {
     flex-wrap: wrap;
     padding: 100px;
     text-decoration: none;
+    
 }
 
 .about {
@@ -69,7 +86,6 @@ body {
     padding: 10px;
     display: inline-block;
     vertical-align: middle;
-
 }
 
 .links h2 {
@@ -84,4 +100,133 @@ body {
 footer {
     text-align: center;
     padding-bottom: 15px;
+    margin-top: auto;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+}
+
+.project {
+    flex-basis: calc(33.33% - 20px); 
+    text-align: center;
+    margin-bottom: 40px;
+    border: 1px solid rgba(184, 177, 177, 0.566);
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 10px #56555498;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px rgb(160, 160, 144);
+}
+
+.projects a {
+    text-decoration: none;
+    color: #000;
+}
+
+.projects a:hover {
+    color: rgb(160, 160, 144);
+    transition: color 0.2s;
+}
+
+
+.project-details {
+    display: flex;
+    align-items: center;
+}
+
+.project-details video {
+    width:365px;
+    height: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 80px;
+    
+}
+
+.content {
+    text-align: left;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.project h2 {
+    text-align:left;
+    margin-left: 180px;
+}
+
+.projects h1 {
+    margin-left :80px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px; /* Adjust the padding for mobile view */
+        font-size: 24px; /* Decrease the font size for better readability on mobile */
+    }
+
+    .container {
+        flex-direction: column; /* Stack the container elements vertically */
+        padding: 20px; /* Reduce the padding for mobile view */
+    }
+
+    .about {
+        flex: 1; /* Allow the "about" section to occupy full width on mobile */
+        margin-right: 0; /* Remove margin for better spacing */
+    }
+
+    .links {
+        flex: 1; /* Allow the "links" section to occupy full width on mobile */
+    }
+
+    .links h2 {
+        margin-left: 0; /* Adjust margin for better alignment on mobile */
+        margin-right: 0; /* Adjust margin for better alignment on mobile */
+    }
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #878885;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #46453f;
+}
+
+.contact h2 {
+    margin: 90px;
+    text-align: center;
 }

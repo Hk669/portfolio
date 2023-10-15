@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <header>
@@ -16,17 +17,20 @@
             <div class="left">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Resume</a></li>
+                    <li><a href="resume.html">Resume</a></li>
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
             <div class="right">
                 <ul>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <div class="hero-section">
+            <span id="typed-text">
+                <span>Hi Im hrushikesh</span>
+            </span>
         </div>
     </header>
     <div class="container">
@@ -39,26 +43,41 @@
             - I’m currently working on Deep Learning, Backend with Django, and Natural Language Generation.</br>
             - Contributing to open-source projects.</br>
             - Fun fact: When I'm not coding, you can find me on the football field, enjoying the beautiful game and staying active.
-            
             </p>
         </div>
         <div class="links">
             <h2>Links: </h2>
-            <a href="https://github.com/Hk669">
+            <a href="https://github.com/Hk669" target="_blank">
                 <img src="img/github.svg" alt="github" class="icon">
             </a>
-            <a href="https://linkedin.com/hrushikeshdokala">
-                <img src="img/linkedin.svg" alt="linkedin" class="icon">
+            <a href="https://www.linkedin.com/in/hrushikeshdokala/" target="_blank">
+                <img src="img/linkedin.svg" alt="linkedin"  class="icon">
             </a>
-            <a href="https://instagram.com/hkeshhk">
+            <a href="https://instagram.com/hkeshhk" target="_blank">
                 <img src="img/instagram.svg" alt="linkedin" class="icon">
             </a>
-            <a href="https://x.com/hrushikeshhhh">
+            <a href="https://x.com/hrushikeshhhh" target="_blank">
                 <img src="img/x-twitter.svg" alt="linkedin" class="icon">
             </a>
         </div>
-        
     </div>
+    <script>
+        var options = {
+          strings: [
+            "Hi, I'm Hrushikesh",
+            "I'm a Computer Science student",
+            "I'm passionate about AI, ML, and web3",
+            "A Startup Founder",
+            "Backend Developer",
+          ],
+          typeSpeed: 40,  
+          backSpeed: 20,  
+          backDelay: 2000, 
+          startDelay: 500, 
+          loop: true,      
+        };
+        var typed = new Typed("#typed-text", options);
+      </script>
 </body>
 <footer>
     <p>&copy; Hrushikesh Dokala 2023</p>
