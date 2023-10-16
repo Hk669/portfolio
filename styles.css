@@ -244,6 +244,22 @@ input[type="submit"]:hover {
     background-color: #46453f;
 }
 
+.contact button {
+    background-color: #edece78a;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size:14px;
+    width: 80px;
+    height: 30px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.contact button:hover {
+    color: rgb(160, 160, 144);
+    transition: color 0.2s;
+}
+
 body textarea {
     width: 520px;
     height: 100px;
@@ -388,6 +404,8 @@ h4 {
 .techstack h2 {
     margin-left: 80px;
 }
+
+
 
 /* By Hrushikesh. */
 /* @Hk669 */
