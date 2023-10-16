@@ -62,7 +62,7 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 100px;
+    padding: 80px;
     text-decoration: none;
     
 }
@@ -160,6 +160,7 @@ footer {
     padding: 10px;
     margin-right: 20px;
     overflow: hidden;
+    max-width: 100%;
 }
 
 .project h2 {
@@ -167,7 +168,19 @@ footer {
     align-items:start;
     margin-left: 120px;
     margin-top: 20px;
+    
 }
+
+.project a {
+    text-decoration: none;
+    color: #171615eb;
+}
+
+.project a:hover {
+    color: rgb(160, 160, 144);
+    transition: color 0.2s;
+}
+
 
 .projects h1 {
     margin-left :80px;
@@ -365,6 +378,15 @@ body textarea {
 
 h4 {
     margin-left: 100px;
+}
+
+.img-cont {
+    margin-left: 90px;
+    padding-bottom: 30px;
+}
+
+.techstack h2 {
+    margin-left: 80px;
 }
 
 /* By Hrushikesh. */
