@@ -108,6 +108,7 @@ footer {
     flex-direction: column;
     flex-wrap:wrap;
     justify-content: space-between;
+    max-width: 100%;
 
 }
 
@@ -121,6 +122,7 @@ footer {
     padding-bottom: 40px;
     box-shadow: 0 0 10px #56555498;
     transition: transform 0.2s, box-shadow 0.2s;
+    
 }
 
 .project:hover {
@@ -157,6 +159,7 @@ footer {
     text-align: left;
     padding: 10px;
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .project h2 {
@@ -254,8 +257,10 @@ body textarea {
 }
 
 .os-content {
-    margin-left:50px;
+    margin-left:300px;
     text-align: left;
+    font-size: larger;
+
 }
 
 .os-details img {
@@ -320,7 +325,7 @@ body textarea {
 
 @media screen and (max-width: 768px) {
     .project, .os-project {
-        flex-basis: calc(50% - 20px); /* Two columns on smaller screens */
+        flex-basis: calc(50% - 20px);
     }
 
     .projects h1, .opensource h1, .terms {
@@ -356,6 +361,10 @@ body textarea {
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+}
+
+h4 {
+    margin-left: 100px;
 }
 
 /* By Hrushikesh. */
