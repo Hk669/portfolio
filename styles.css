@@ -405,7 +405,15 @@ h4 {
     margin-left: 80px;
 }
 
+.achievement-img {
+    margin-left: 20px;
+    display: flex;
+    width: 500px;
+}
 
-
+.achievements h1 {
+    margin-left: 100px;
+    margin-bottom: 60px;
+}
 /* By Hrushikesh. */
 /* @Hk669 */
